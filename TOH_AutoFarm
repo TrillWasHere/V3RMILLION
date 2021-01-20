@@ -1,0 +1,10 @@
+while wait() do
+for i, v in pairs(game.Workspace:FindFirstChild("tower"):FindFirstChild("finishes"):GetChildren()) do
+game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(v.Position)
+wait(0.1)
+end
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Workspace.tower.sections.finish.FinishGlow.Position)
+wait(1.5)
+game:GetService("TeleportService"):Teleport(1962086868, game:GetService("Players").LocalPlayer)
+end
